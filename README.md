@@ -5,3 +5,5 @@
 ### <p style="text-align:center;font-size:13pt;">**CAPSTONE MODULE 2**</p>
 
 ---
+
+### TABLEAU DASHBOARD LINK : https://public.tableau.com/app/profile/ahmad.fiqri8345/viz/casptonedashboard/Dashboard2ALT?publish=yes
