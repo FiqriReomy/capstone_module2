@@ -7,3 +7,5 @@
 ---
 
 ### TABLEAU DASHBOARD LINK : https://public.tableau.com/app/profile/ahmad.fiqri8345/viz/casptonedashboard/Dashboard2ALT?publish=yes
+
+### TABLEAU STORY LINK : https://public.tableau.com/app/profile/ahmad.fiqri8345/viz/casptonedashboard/Story2?publish=yes
