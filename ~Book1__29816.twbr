@@ -1,0 +1,3335 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20241.24.0425.1340                               -->
+<workbook original-version='18.1' source-build='2024.1.2 (20241.24.0425.1340)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <IntuitiveSorting />
+    <IntuitiveSorting_SP2 />
+    <MapboxVectorStylesAndLayers />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelExtractV2.true...ObjectModelExtractV2 />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <SortTagCleanup />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource caption='Airbnb Listings Bangkok' inline='true' name='federated.1lhyqlj0ylshwg1exkb5y1ypdjyc' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='airbnb' name='textscan.13efys50radl4p1bynlsx1cn8dji'>
+            <connection class='textscan' directory='D:/capstone2' filename='airbnb.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.13efys50radl4p1bynlsx1cn8dji' name='airbnb.csv' table='[airbnb#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_ID' separator=','>
+            <column datatype='integer' name='id' ordinal='0' />
+            <column datatype='string' name='name' ordinal='1' />
+            <column datatype='integer' name='host_id' ordinal='2' />
+            <column datatype='string' name='host_name' ordinal='3' />
+            <column datatype='string' name='neighbourhood' ordinal='4' />
+            <column datatype='real' name='latitude' ordinal='5' />
+            <column datatype='real' name='longitude' ordinal='6' />
+            <column datatype='string' name='room_type' ordinal='7' />
+            <column datatype='integer' name='price' ordinal='8' />
+            <column datatype='integer' name='minimum_nights' ordinal='9' />
+            <column datatype='integer' name='number_of_reviews' ordinal='10' />
+            <column datatype='string' name='last_review' ordinal='11' />
+            <column datatype='real' name='reviews_per_month' ordinal='12' />
+            <column datatype='integer' name='calculated_host_listings_count' ordinal='13' />
+            <column datatype='integer' name='availability_365' ordinal='14' />
+            <column datatype='integer' name='number_of_reviews_ltm' ordinal='15' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.13efys50radl4p1bynlsx1cn8dji' name='airbnb.csv' table='[airbnb#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_ID' separator=','>
+            <column datatype='integer' name='id' ordinal='0' />
+            <column datatype='string' name='name' ordinal='1' />
+            <column datatype='integer' name='host_id' ordinal='2' />
+            <column datatype='string' name='host_name' ordinal='3' />
+            <column datatype='string' name='neighbourhood' ordinal='4' />
+            <column datatype='real' name='latitude' ordinal='5' />
+            <column datatype='real' name='longitude' ordinal='6' />
+            <column datatype='string' name='room_type' ordinal='7' />
+            <column datatype='integer' name='price' ordinal='8' />
+            <column datatype='integer' name='minimum_nights' ordinal='9' />
+            <column datatype='integer' name='number_of_reviews' ordinal='10' />
+            <column datatype='string' name='last_review' ordinal='11' />
+            <column datatype='real' name='reviews_per_month' ordinal='12' />
+            <column datatype='integer' name='calculated_host_listings_count' ordinal='13' />
+            <column datatype='integer' name='availability_365' ordinal='14' />
+            <column datatype='integer' name='number_of_reviews_ltm' ordinal='15' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[airbnb.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;IDR&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_ID&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>id</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[id]</local-name>
+            <parent-name>[airbnb.csv]</parent-name>
+            <remote-alias>id</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[airbnb.csv_43DF88471E9F444FB921405B1990C5F5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[name]</local-name>
+            <parent-name>[airbnb.csv]</parent-name>
+            <remote-alias>name</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[airbnb.csv_43DF88471E9F444FB921405B1990C5F5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>host_id</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[host_id]</local-name>
+            <parent-name>[airbnb.csv]</parent-name>
+            <remote-alias>host_id</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[airbnb.csv_43DF88471E9F444FB921405B1990C5F5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>host_name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[host_name]</local-name>
+            <parent-name>[airbnb.csv]</parent-name>
+            <remote-alias>host_name</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[airbnb.csv_43DF88471E9F444FB921405B1990C5F5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>neighbourhood</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[neighbourhood]</local-name>
+            <parent-name>[airbnb.csv]</parent-name>
+            <remote-alias>neighbourhood</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[airbnb.csv_43DF88471E9F444FB921405B1990C5F5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>latitude</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[latitude]</local-name>
+            <parent-name>[airbnb.csv]</parent-name>
+            <remote-alias>latitude</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[airbnb.csv_43DF88471E9F444FB921405B1990C5F5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>longitude</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[longitude]</local-name>
+            <parent-name>[airbnb.csv]</parent-name>
+            <remote-alias>longitude</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[airbnb.csv_43DF88471E9F444FB921405B1990C5F5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>room_type</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[room_type]</local-name>
+            <parent-name>[airbnb.csv]</parent-name>
+            <remote-alias>room_type</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[airbnb.csv_43DF88471E9F444FB921405B1990C5F5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>price</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[price]</local-name>
+            <parent-name>[airbnb.csv]</parent-name>
+            <remote-alias>price</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[airbnb.csv_43DF88471E9F444FB921405B1990C5F5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>minimum_nights</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[minimum_nights]</local-name>
+            <parent-name>[airbnb.csv]</parent-name>
+            <remote-alias>minimum_nights</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[airbnb.csv_43DF88471E9F444FB921405B1990C5F5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>number_of_reviews</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[number_of_reviews]</local-name>
+            <parent-name>[airbnb.csv]</parent-name>
+            <remote-alias>number_of_reviews</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[airbnb.csv_43DF88471E9F444FB921405B1990C5F5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>last_review</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[last_review]</local-name>
+            <parent-name>[airbnb.csv]</parent-name>
+            <remote-alias>last_review</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[airbnb.csv_43DF88471E9F444FB921405B1990C5F5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>reviews_per_month</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[reviews_per_month]</local-name>
+            <parent-name>[airbnb.csv]</parent-name>
+            <remote-alias>reviews_per_month</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[airbnb.csv_43DF88471E9F444FB921405B1990C5F5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>calculated_host_listings_count</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[calculated_host_listings_count]</local-name>
+            <parent-name>[airbnb.csv]</parent-name>
+            <remote-alias>calculated_host_listings_count</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[airbnb.csv_43DF88471E9F444FB921405B1990C5F5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>availability_365</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[availability_365]</local-name>
+            <parent-name>[airbnb.csv]</parent-name>
+            <remote-alias>availability_365</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[airbnb.csv_43DF88471E9F444FB921405B1990C5F5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>number_of_reviews_ltm</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[number_of_reviews_ltm]</local-name>
+            <parent-name>[airbnb.csv]</parent-name>
+            <remote-alias>number_of_reviews_ltm</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[airbnb.csv_43DF88471E9F444FB921405B1990C5F5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Price (copy)' datatype='integer' name='[Price (copy)_887772101044387841]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='SUM([price]) * SUM([number_of_reviews])' />
+      </column>
+      <_.fcp.ObjectModelTableType.true...column caption='airbnb.csv' datatype='table' name='[__tableau_internal_object_id__].[airbnb.csv_43DF88471E9F444FB921405B1990C5F5]' role='measure' type='quantitative' />
+      <column caption='Availability 365' datatype='integer' name='[availability_365]' role='measure' type='quantitative' />
+      <column caption='Calculated Host Listings Count' datatype='integer' name='[calculated_host_listings_count]' role='measure' type='quantitative' />
+      <column caption='Host Id' datatype='integer' name='[host_id]' role='dimension' type='ordinal' />
+      <column caption='Host Name' datatype='string' name='[host_name]' role='dimension' type='nominal' />
+      <column caption='Id' datatype='integer' name='[id]' role='dimension' type='ordinal' />
+      <column caption='Last Review' datatype='string' name='[last_review]' role='dimension' type='nominal' />
+      <column aggregation='Avg' caption='Latitude' datatype='real' name='[latitude]' role='measure' semantic-role='[Geographical].[Latitude]' type='quantitative' />
+      <column aggregation='Avg' caption='Longitude' datatype='real' name='[longitude]' role='measure' semantic-role='[Geographical].[Longitude]' type='quantitative' />
+      <column caption='Minimum Nights' datatype='integer' name='[minimum_nights]' role='measure' type='quantitative' />
+      <column caption='Name' datatype='string' name='[name]' role='dimension' type='nominal' />
+      <column caption='Neighbourhood' datatype='string' name='[neighbourhood]' role='dimension' type='nominal' />
+      <column caption='Number Of Reviews' datatype='integer' name='[number_of_reviews]' role='measure' type='quantitative' />
+      <column caption='Number Of Reviews Ltm' datatype='integer' name='[number_of_reviews_ltm]' role='measure' type='quantitative' />
+      <column caption='Price' datatype='integer' name='[price]' role='measure' type='quantitative' />
+      <column caption='Reviews Per Month' datatype='real' name='[reviews_per_month]' role='dimension' type='quantitative' />
+      <column caption='Room Type' datatype='string' name='[room_type]' role='dimension' type='nominal' />
+      <column-instance column='[calculated_host_listings_count]' derivation='Count' name='[cnt:calculated_host_listings_count:ok]' pivot='key' type='ordinal' />
+      <column-instance column='[number_of_reviews]' derivation='Count' name='[cnt:number_of_reviews:ok]' pivot='key' type='ordinal' />
+      <column-instance column='[reviews_per_month]' derivation='Count' name='[cnt:reviews_per_month:ok]' pivot='key' type='ordinal' />
+      <column-instance column='[neighbourhood]' derivation='None' name='[none:neighbourhood:nk]' pivot='key' type='nominal' />
+      <column-instance column='[room_type]' derivation='None' name='[none:room_type:nk]' pivot='key' type='nominal' />
+      <extract _.fcp.ObjectModelExtractV2.true...object-id='' _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/user/AppData/Local/Temp/TableauTemp/#TableauTemp_1q4pm7x1xxmyyk14vim650tgebft.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='05/30/2024 03:16:31 PM' username='tableau_internal_user'>
+          <_.fcp.ObjectModelEncapsulateLegacy.false...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <_.fcp.ObjectModelEncapsulateLegacy.true...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>id</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[id]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>id</remote-alias>
+              <ordinal>0</ordinal>
+              <family>airbnb.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>15854</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[airbnb.csv_43DF88471E9F444FB921405B1990C5F5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>name</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[name]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>name</remote-alias>
+              <ordinal>1</ordinal>
+              <family>airbnb.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>8359</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[airbnb.csv_43DF88471E9F444FB921405B1990C5F5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>host_id</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[host_id]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>host_id</remote-alias>
+              <ordinal>2</ordinal>
+              <family>airbnb.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>3504</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[airbnb.csv_43DF88471E9F444FB921405B1990C5F5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>host_name</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[host_name]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>host_name</remote-alias>
+              <ordinal>3</ordinal>
+              <family>airbnb.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3138</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[airbnb.csv_43DF88471E9F444FB921405B1990C5F5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>neighbourhood</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[neighbourhood]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>neighbourhood</remote-alias>
+              <ordinal>4</ordinal>
+              <family>airbnb.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>54</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[airbnb.csv_43DF88471E9F444FB921405B1990C5F5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>latitude</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[latitude]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>latitude</remote-alias>
+              <ordinal>5</ordinal>
+              <family>airbnb.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>5407</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[airbnb.csv_43DF88471E9F444FB921405B1990C5F5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>longitude</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[longitude]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>longitude</remote-alias>
+              <ordinal>6</ordinal>
+              <family>airbnb.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>5736</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[airbnb.csv_43DF88471E9F444FB921405B1990C5F5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>room_type</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[room_type]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>room_type</remote-alias>
+              <ordinal>7</ordinal>
+              <family>airbnb.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[airbnb.csv_43DF88471E9F444FB921405B1990C5F5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>price</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[price]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>price</remote-alias>
+              <ordinal>8</ordinal>
+              <family>airbnb.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1818</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[airbnb.csv_43DF88471E9F444FB921405B1990C5F5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>minimum_nights</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[minimum_nights]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>minimum_nights</remote-alias>
+              <ordinal>9</ordinal>
+              <family>airbnb.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>59</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[airbnb.csv_43DF88471E9F444FB921405B1990C5F5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>number_of_reviews</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[number_of_reviews]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>number_of_reviews</remote-alias>
+              <ordinal>10</ordinal>
+              <family>airbnb.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>274</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[airbnb.csv_43DF88471E9F444FB921405B1990C5F5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>last_review</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[last_review]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>last_review</remote-alias>
+              <ordinal>11</ordinal>
+              <family>airbnb.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1094</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[airbnb.csv_43DF88471E9F444FB921405B1990C5F5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>reviews_per_month</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[reviews_per_month]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>reviews_per_month</remote-alias>
+              <ordinal>12</ordinal>
+              <family>airbnb.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>491</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[airbnb.csv_43DF88471E9F444FB921405B1990C5F5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>calculated_host_listings_count</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[calculated_host_listings_count]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>calculated_host_listings_count</remote-alias>
+              <ordinal>13</ordinal>
+              <family>airbnb.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>50</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[airbnb.csv_43DF88471E9F444FB921405B1990C5F5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>availability_365</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[availability_365]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>availability_365</remote-alias>
+              <ordinal>14</ordinal>
+              <family>airbnb.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>485</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[airbnb.csv_43DF88471E9F444FB921405B1990C5F5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>number_of_reviews_ltm</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[number_of_reviews_ltm]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>number_of_reviews_ltm</remote-alias>
+              <ordinal>15</ordinal>
+              <family>airbnb.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>77</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[airbnb.csv_43DF88471E9F444FB921405B1990C5F5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[cnt:reviews_per_month:ok]' type='palette'>
+            <map to='#499894'>
+              <bucket>8</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>29</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>55</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>104</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>21</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>43</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>79</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>190</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>15854</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>4</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>25</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>49</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>83</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>467</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>12</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>33</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>63</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>111</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>9</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>30</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>56</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>105</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>5</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>26</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>51</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>85</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>498</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>18</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>41</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>76</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>165</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>1</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>22</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>45</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>80</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>223</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>16</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>38</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>73</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>139</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>6</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>27</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>52</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>93</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>5790</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>13</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>34</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>66</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>112</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>14</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>35</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>67</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>126</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>17</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>39</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>74</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>142</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>19</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>20</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>42</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>78</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>179</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>10</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>31</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>59</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>107</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>7</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>28</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>54</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>94</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>2</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>23</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>46</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>81</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>248</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>15</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>37</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>68</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>131</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>11</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>32</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>60</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>108</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>3</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>24</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>47</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>82</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>304</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:neighbourhood:nk]' type='palette'>
+            <map to='#499894'>
+              <bucket>&quot;Bang Rak&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Nong Khaem&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Wang Thong Lang&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Bang Bon&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Khlong Sam Wa&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Saphan Sung&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Bang Kho laen&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Lat Krabang&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Thawi Watthana&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Bueng Kum&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Phra Khanong&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Bang Sue&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Parthum Wan&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Yan na wa&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Bang Khun thain&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Lat Phrao&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Thon buri&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Huai Khwang&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Sai Mai&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Bang Kapi&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Khlong San&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Sathon&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Don Mueang&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Rat Burana&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Bang Na&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Min Buri&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Thung khru&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Chatu Chak&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Phra Nakhon&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Chom Thong&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Pom Prap Sattru Phai&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Dusit&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Ratchathewi&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Khan Na Yao&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Samphanthawong&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Bangkok Noi&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Phasi Charoen&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Bang Phlat&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Nong Chok&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Vadhana&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Bang Khae&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Khlong Toei&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Suanluang&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Din Daeng&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Pra Wet&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Bangkok Yai&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Phaya Thai&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Bang Khen&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Lak Si&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Taling Chan&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[cnt:calculated_host_listings_count:ok]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>220206</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>15854</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:room_type:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;Entire home/apt&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;Shared room&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Private room&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Hotel room&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[cnt:number_of_reviews:ok]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>264035</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>15854</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Indonesia&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='airbnb.csv' id='airbnb.csv_43DF88471E9F444FB921405B1990C5F5'>
+            <properties context=''>
+              <relation connection='textscan.13efys50radl4p1bynlsx1cn8dji' name='airbnb.csv' table='[airbnb#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_ID' separator=','>
+                  <column datatype='integer' name='id' ordinal='0' />
+                  <column datatype='string' name='name' ordinal='1' />
+                  <column datatype='integer' name='host_id' ordinal='2' />
+                  <column datatype='string' name='host_name' ordinal='3' />
+                  <column datatype='string' name='neighbourhood' ordinal='4' />
+                  <column datatype='real' name='latitude' ordinal='5' />
+                  <column datatype='real' name='longitude' ordinal='6' />
+                  <column datatype='string' name='room_type' ordinal='7' />
+                  <column datatype='integer' name='price' ordinal='8' />
+                  <column datatype='integer' name='minimum_nights' ordinal='9' />
+                  <column datatype='integer' name='number_of_reviews' ordinal='10' />
+                  <column datatype='string' name='last_review' ordinal='11' />
+                  <column datatype='real' name='reviews_per_month' ordinal='12' />
+                  <column datatype='integer' name='calculated_host_listings_count' ordinal='13' />
+                  <column datatype='integer' name='availability_365' ordinal='14' />
+                  <column datatype='integer' name='number_of_reviews_ltm' ordinal='15' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <mapsources>
+    <mapsource name='Tableau' />
+  </mapsources>
+  <worksheets>
+    <worksheet name='0.a.'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Airbnb Listings Bangkok' name='federated.1lhyqlj0ylshwg1exkb5y1ypdjyc' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1lhyqlj0ylshwg1exkb5y1ypdjyc'>
+            <column caption='Last Review' datatype='string' name='[last_review]' role='dimension' type='nominal' />
+            <column-instance column='[last_review]' derivation='None' name='[none:last_review:nk]' pivot='key' type='nominal' />
+            <column caption='Number Of Reviews' datatype='integer' name='[number_of_reviews]' role='measure' type='quantitative' />
+            <column-instance column='[number_of_reviews]' derivation='Sum' name='[sum:number_of_reviews:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.1lhyqlj0ylshwg1exkb5y1ypdjyc].[none:last_review:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.1lhyqlj0ylshwg1exkb5y1ypdjyc].[sum:number_of_reviews:qk]' shelf='columns' />
+          </shelf-sorts>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.1lhyqlj0ylshwg1exkb5y1ypdjyc].[sum:number_of_reviews:qk]</rows>
+        <cols>[federated.1lhyqlj0ylshwg1exkb5y1ypdjyc].[none:last_review:nk]</cols>
+      </table>
+      <simple-id uuid='{600DA853-CF47-484A-92AF-5AB7B9F6BBD7}' />
+    </worksheet>
+    <worksheet name='1.'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1' fontcolor='#000000' fontname='Arial'>Total Number_of_reviews in each neighbourhood</run>
+            <run fontalignment='1' fontcolor='#000000' fontname='Benton Sans Book'>Æ </run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Airbnb Listings Bangkok' name='federated.1lhyqlj0ylshwg1exkb5y1ypdjyc' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1lhyqlj0ylshwg1exkb5y1ypdjyc'>
+            <column caption='Neighbourhood' datatype='string' name='[neighbourhood]' role='dimension' type='nominal' />
+            <column-instance column='[neighbourhood]' derivation='None' name='[none:neighbourhood:nk]' pivot='key' type='nominal' />
+            <column caption='Number Of Reviews' datatype='integer' name='[number_of_reviews]' role='measure' type='quantitative' />
+            <column-instance column='[number_of_reviews]' derivation='Sum' name='[sum:number_of_reviews:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <manual-sort column='[federated.1lhyqlj0ylshwg1exkb5y1ypdjyc].[none:neighbourhood:nk]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;Khlong Toei&quot;</bucket>
+              <bucket>&quot;Vadhana&quot;</bucket>
+              <bucket>&quot;Sathon&quot;</bucket>
+              <bucket>&quot;Ratchathewi&quot;</bucket>
+              <bucket>&quot;Huai Khwang&quot;</bucket>
+              <bucket>&quot;Bang Rak&quot;</bucket>
+              <bucket>&quot;Phaya Thai&quot;</bucket>
+              <bucket>&quot;Parthum Wan&quot;</bucket>
+              <bucket>&quot;Chatu Chak&quot;</bucket>
+              <bucket>&quot;Phra Nakhon&quot;</bucket>
+              <bucket>&quot;Khlong San&quot;</bucket>
+              <bucket>&quot;Din Daeng&quot;</bucket>
+              <bucket>&quot;Phra Khanong&quot;</bucket>
+              <bucket>&quot;Bang Na&quot;</bucket>
+              <bucket>&quot;Pom Prap Sattru Phai&quot;</bucket>
+              <bucket>&quot;Suanluang&quot;</bucket>
+              <bucket>&quot;Bang Sue&quot;</bucket>
+              <bucket>&quot;Thon buri&quot;</bucket>
+              <bucket>&quot;Yan na wa&quot;</bucket>
+              <bucket>&quot;Lat Krabang&quot;</bucket>
+              <bucket>&quot;Bang Kho laen&quot;</bucket>
+              <bucket>&quot;Don Mueang&quot;</bucket>
+              <bucket>&quot;Bang Kapi&quot;</bucket>
+              <bucket>&quot;Lak Si&quot;</bucket>
+              <bucket>&quot;Pra Wet&quot;</bucket>
+              <bucket>&quot;Phasi Charoen&quot;</bucket>
+              <bucket>&quot;Samphanthawong&quot;</bucket>
+              <bucket>&quot;Chom Thong&quot;</bucket>
+              <bucket>&quot;Bang Phlat&quot;</bucket>
+              <bucket>&quot;Bangkok Noi&quot;</bucket>
+              <bucket>&quot;Dusit&quot;</bucket>
+              <bucket>&quot;Bangkok Yai&quot;</bucket>
+              <bucket>&quot;Bang Khen&quot;</bucket>
+              <bucket>&quot;Rat Burana&quot;</bucket>
+              <bucket>&quot;Bueng Kum&quot;</bucket>
+              <bucket>&quot;Khan Na Yao&quot;</bucket>
+              <bucket>&quot;Bang Khae&quot;</bucket>
+              <bucket>&quot;Wang Thong Lang&quot;</bucket>
+              <bucket>&quot;Lat Phrao&quot;</bucket>
+              <bucket>&quot;Min Buri&quot;</bucket>
+              <bucket>&quot;Saphan Sung&quot;</bucket>
+              <bucket>&quot;Bang Khun thain&quot;</bucket>
+              <bucket>&quot;Taling Chan&quot;</bucket>
+              <bucket>&quot;Khlong Sam Wa&quot;</bucket>
+              <bucket>&quot;Thung khru&quot;</bucket>
+              <bucket>&quot;Sai Mai&quot;</bucket>
+              <bucket>&quot;Thawi Watthana&quot;</bucket>
+              <bucket>&quot;Nong Chok&quot;</bucket>
+              <bucket>&quot;Nong Khaem&quot;</bucket>
+              <bucket>&quot;Bang Bon&quot;</bucket>
+              <bucket>%all%</bucket>
+            </dictionary>
+          </manual-sort>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.1lhyqlj0ylshwg1exkb5y1ypdjyc].[sum:number_of_reviews:qk]</rows>
+        <cols>[federated.1lhyqlj0ylshwg1exkb5y1ypdjyc].[none:neighbourhood:nk]</cols>
+      </table>
+      <simple-id uuid='{E385705C-67D2-4D96-A4DC-736D855A7736}' />
+    </worksheet>
+    <worksheet name='1.neigh1'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Total Number_of_reviewers Each Neighbourhood 
+</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Airbnb Listings Bangkok' name='federated.1lhyqlj0ylshwg1exkb5y1ypdjyc' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1lhyqlj0ylshwg1exkb5y1ypdjyc'>
+            <column caption='Neighbourhood' datatype='string' name='[neighbourhood]' role='dimension' type='nominal' />
+            <column-instance column='[neighbourhood]' derivation='None' name='[none:neighbourhood:nk]' pivot='key' type='nominal' />
+            <column caption='Number Of Reviews' datatype='integer' name='[number_of_reviews]' role='measure' type='quantitative' />
+            <column-instance column='[number_of_reviews]' derivation='Sum' name='[sum:number_of_reviews:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <manual-sort column='[federated.1lhyqlj0ylshwg1exkb5y1ypdjyc].[none:neighbourhood:nk]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;Khlong Toei&quot;</bucket>
+              <bucket>&quot;Vadhana&quot;</bucket>
+              <bucket>&quot;Sathon&quot;</bucket>
+              <bucket>&quot;Ratchathewi&quot;</bucket>
+              <bucket>&quot;Huai Khwang&quot;</bucket>
+              <bucket>&quot;Bang Rak&quot;</bucket>
+              <bucket>&quot;Phaya Thai&quot;</bucket>
+              <bucket>&quot;Parthum Wan&quot;</bucket>
+              <bucket>&quot;Chatu Chak&quot;</bucket>
+              <bucket>&quot;Phra Nakhon&quot;</bucket>
+              <bucket>&quot;Khlong San&quot;</bucket>
+              <bucket>&quot;Din Daeng&quot;</bucket>
+              <bucket>&quot;Phra Khanong&quot;</bucket>
+              <bucket>&quot;Bang Na&quot;</bucket>
+              <bucket>&quot;Pom Prap Sattru Phai&quot;</bucket>
+              <bucket>&quot;Suanluang&quot;</bucket>
+              <bucket>&quot;Bang Sue&quot;</bucket>
+              <bucket>&quot;Thon buri&quot;</bucket>
+              <bucket>&quot;Yan na wa&quot;</bucket>
+              <bucket>&quot;Lat Krabang&quot;</bucket>
+              <bucket>&quot;Bang Kho laen&quot;</bucket>
+              <bucket>&quot;Don Mueang&quot;</bucket>
+              <bucket>&quot;Bang Kapi&quot;</bucket>
+              <bucket>&quot;Lak Si&quot;</bucket>
+              <bucket>&quot;Pra Wet&quot;</bucket>
+              <bucket>&quot;Phasi Charoen&quot;</bucket>
+              <bucket>&quot;Samphanthawong&quot;</bucket>
+              <bucket>&quot;Chom Thong&quot;</bucket>
+              <bucket>&quot;Bang Phlat&quot;</bucket>
+              <bucket>&quot;Bangkok Noi&quot;</bucket>
+              <bucket>&quot;Dusit&quot;</bucket>
+              <bucket>&quot;Bangkok Yai&quot;</bucket>
+              <bucket>&quot;Bang Khen&quot;</bucket>
+              <bucket>&quot;Rat Burana&quot;</bucket>
+              <bucket>&quot;Bueng Kum&quot;</bucket>
+              <bucket>&quot;Khan Na Yao&quot;</bucket>
+              <bucket>&quot;Bang Khae&quot;</bucket>
+              <bucket>&quot;Wang Thong Lang&quot;</bucket>
+              <bucket>&quot;Lat Phrao&quot;</bucket>
+              <bucket>&quot;Min Buri&quot;</bucket>
+              <bucket>&quot;Saphan Sung&quot;</bucket>
+              <bucket>&quot;Bang Khun thain&quot;</bucket>
+              <bucket>&quot;Taling Chan&quot;</bucket>
+              <bucket>&quot;Khlong Sam Wa&quot;</bucket>
+              <bucket>&quot;Thung khru&quot;</bucket>
+              <bucket>&quot;Sai Mai&quot;</bucket>
+              <bucket>&quot;Thawi Watthana&quot;</bucket>
+              <bucket>&quot;Nong Chok&quot;</bucket>
+              <bucket>&quot;Nong Khaem&quot;</bucket>
+              <bucket>&quot;Bang Bon&quot;</bucket>
+              <bucket>%all%</bucket>
+            </dictionary>
+          </manual-sort>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.1lhyqlj0ylshwg1exkb5y1ypdjyc].[none:neighbourhood:nk]</rows>
+        <cols>[federated.1lhyqlj0ylshwg1exkb5y1ypdjyc].[sum:number_of_reviews:qk]</cols>
+      </table>
+      <simple-id uuid='{398A0C9F-434B-490F-BB9E-4550C9C92A7E}' />
+    </worksheet>
+    <worksheet name='1.neigh2'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Average Number_of_reviewers Each Neighbourhood 
+</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Airbnb Listings Bangkok' name='federated.1lhyqlj0ylshwg1exkb5y1ypdjyc' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1lhyqlj0ylshwg1exkb5y1ypdjyc'>
+            <column-instance column='[number_of_reviews]' derivation='Avg' name='[avg:number_of_reviews:qk]' pivot='key' type='quantitative' />
+            <column caption='Neighbourhood' datatype='string' name='[neighbourhood]' role='dimension' type='nominal' />
+            <column-instance column='[neighbourhood]' derivation='None' name='[none:neighbourhood:nk]' pivot='key' type='nominal' />
+            <column caption='Number Of Reviews' datatype='integer' name='[number_of_reviews]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.1lhyqlj0ylshwg1exkb5y1ypdjyc].[none:neighbourhood:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.1lhyqlj0ylshwg1exkb5y1ypdjyc].[avg:number_of_reviews:qk]' shelf='rows' />
+          </shelf-sorts>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.1lhyqlj0ylshwg1exkb5y1ypdjyc].[none:neighbourhood:nk]</rows>
+        <cols>[federated.1lhyqlj0ylshwg1exkb5y1ypdjyc].[avg:number_of_reviews:qk]</cols>
+      </table>
+      <simple-id uuid='{31933350-A850-4C80-9F5B-3AD3DED285A7}' />
+    </worksheet>
+    <worksheet name='1.neigh3'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Number of Listing Each Neighbourhood</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Airbnb Listings Bangkok' name='federated.1lhyqlj0ylshwg1exkb5y1ypdjyc' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1lhyqlj0ylshwg1exkb5y1ypdjyc'>
+            <column caption='Calculated Host Listings Count' datatype='integer' name='[calculated_host_listings_count]' role='measure' type='quantitative' />
+            <column-instance column='[calculated_host_listings_count]' derivation='Count' name='[cnt:calculated_host_listings_count:qk]' pivot='key' type='quantitative' />
+            <column caption='Neighbourhood' datatype='string' name='[neighbourhood]' role='dimension' type='nominal' />
+            <column-instance column='[neighbourhood]' derivation='None' name='[none:neighbourhood:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.1lhyqlj0ylshwg1exkb5y1ypdjyc].[none:neighbourhood:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.1lhyqlj0ylshwg1exkb5y1ypdjyc].[cnt:calculated_host_listings_count:qk]' shelf='rows' />
+          </shelf-sorts>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1lhyqlj0ylshwg1exkb5y1ypdjyc].[none:neighbourhood:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.1lhyqlj0ylshwg1exkb5y1ypdjyc].[none:neighbourhood:nk]</rows>
+        <cols>[federated.1lhyqlj0ylshwg1exkb5y1ypdjyc].[cnt:calculated_host_listings_count:qk]</cols>
+      </table>
+      <simple-id uuid='{72562C29-C7DD-49C1-BBD5-A9FC9AC48D3A}' />
+    </worksheet>
+    <worksheet name='1.neigh4'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Average Price of Listing Each Neighbourhood</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Airbnb Listings Bangkok' name='federated.1lhyqlj0ylshwg1exkb5y1ypdjyc' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1lhyqlj0ylshwg1exkb5y1ypdjyc'>
+            <column-instance column='[price]' derivation='Avg' name='[avg:price:qk]' pivot='key' type='quantitative' />
+            <column caption='Neighbourhood' datatype='string' name='[neighbourhood]' role='dimension' type='nominal' />
+            <column-instance column='[neighbourhood]' derivation='None' name='[none:neighbourhood:nk]' pivot='key' type='nominal' />
+            <column caption='Price' datatype='integer' name='[price]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.1lhyqlj0ylshwg1exkb5y1ypdjyc].[none:neighbourhood:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.1lhyqlj0ylshwg1exkb5y1ypdjyc].[avg:price:qk]' shelf='rows' />
+          </shelf-sorts>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.1lhyqlj0ylshwg1exkb5y1ypdjyc].[none:neighbourhood:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.1lhyqlj0ylshwg1exkb5y1ypdjyc].[none:neighbourhood:nk]</rows>
+        <cols>[federated.1lhyqlj0ylshwg1exkb5y1ypdjyc].[avg:price:qk]</cols>
+      </table>
+      <simple-id uuid='{6BE65026-C643-4572-829D-64147B8B1E90}' />
+    </worksheet>
+    <worksheet name='2.'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#000000' fontname='Arial'>Total Host_name in each Neighbourhood</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Airbnb Listings Bangkok' name='federated.1lhyqlj0ylshwg1exkb5y1ypdjyc' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1lhyqlj0ylshwg1exkb5y1ypdjyc'>
+            <column-instance column='[host_name]' derivation='Count' name='[cnt:host_name:qk]' pivot='key' type='quantitative' />
+            <column caption='Host Name' datatype='string' name='[host_name]' role='dimension' type='nominal' />
+            <column caption='Neighbourhood' datatype='string' name='[neighbourhood]' role='dimension' type='nominal' />
+            <column-instance column='[neighbourhood]' derivation='None' name='[none:neighbourhood:nk]' pivot='key' type='nominal' />
+            <column caption='Number Of Reviews' datatype='integer' name='[number_of_reviews]' role='measure' type='quantitative' />
+            <column-instance column='[number_of_reviews]' derivation='Sum' name='[sum:number_of_reviews:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.1lhyqlj0ylshwg1exkb5y1ypdjyc].[none:neighbourhood:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.1lhyqlj0ylshwg1exkb5y1ypdjyc].[cnt:host_name:qk]' shelf='columns' />
+          </shelf-sorts>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <lod column='[federated.1lhyqlj0ylshwg1exkb5y1ypdjyc].[sum:number_of_reviews:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.1lhyqlj0ylshwg1exkb5y1ypdjyc].[cnt:host_name:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <lod column='[federated.1lhyqlj0ylshwg1exkb5y1ypdjyc].[sum:number_of_reviews:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.1lhyqlj0ylshwg1exkb5y1ypdjyc].[sum:number_of_reviews:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <lod column='[federated.1lhyqlj0ylshwg1exkb5y1ypdjyc].[sum:number_of_reviews:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.1lhyqlj0ylshwg1exkb5y1ypdjyc].[cnt:host_name:qk] + [federated.1lhyqlj0ylshwg1exkb5y1ypdjyc].[sum:number_of_reviews:qk])</rows>
+        <cols>[federated.1lhyqlj0ylshwg1exkb5y1ypdjyc].[none:neighbourhood:nk]</cols>
+      </table>
+      <simple-id uuid='{ECA4EB2E-18B8-4C69-9B88-66344EF7AEDA}' />
+    </worksheet>
+    <worksheet name='2. room1'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Total  number_of_reviews by room_type</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Airbnb Listings Bangkok' name='federated.1lhyqlj0ylshwg1exkb5y1ypdjyc' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1lhyqlj0ylshwg1exkb5y1ypdjyc'>
+            <column-instance column='[id]' derivation='Count' name='[cnt:id:qk]' pivot='key' type='quantitative' />
+            <column caption='Id' datatype='integer' name='[id]' role='dimension' type='ordinal' />
+            <column-instance column='[room_type]' derivation='None' name='[none:room_type:nk]' pivot='key' type='nominal' />
+            <column caption='Number Of Reviews' datatype='integer' name='[number_of_reviews]' role='measure' type='quantitative' />
+            <column caption='Room Type' datatype='string' name='[room_type]' role='dimension' type='nominal' />
+            <column-instance column='[number_of_reviews]' derivation='Sum' name='[sum:number_of_reviews:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.1lhyqlj0ylshwg1exkb5y1ypdjyc].[none:room_type:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.1lhyqlj0ylshwg1exkb5y1ypdjyc].[sum:number_of_reviews:qk]' shelf='columns' />
+          </shelf-sorts>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.1lhyqlj0ylshwg1exkb5y1ypdjyc].[none:room_type:nk]' />
+              <text column='[federated.1lhyqlj0ylshwg1exkb5y1ypdjyc].[cnt:id:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1lhyqlj0ylshwg1exkb5y1ypdjyc].[sum:number_of_reviews:qk]</rows>
+        <cols>[federated.1lhyqlj0ylshwg1exkb5y1ypdjyc].[none:room_type:nk]</cols>
+      </table>
+      <simple-id uuid='{D819CD47-21EF-4D33-9CBC-FC8E73F9F046}' />
+    </worksheet>
+    <worksheet name='2.room2'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontcolor='#000000' fontname='Benton Sans Book'>Average number_of_reviews per Room_Type</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Airbnb Listings Bangkok' name='federated.1lhyqlj0ylshwg1exkb5y1ypdjyc' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1lhyqlj0ylshwg1exkb5y1ypdjyc'>
+            <column-instance column='[number_of_reviews]' derivation='Avg' name='[avg:number_of_reviews:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[room_type]' derivation='None' name='[none:room_type:nk]' pivot='key' type='nominal' />
+            <column caption='Number Of Reviews' datatype='integer' name='[number_of_reviews]' role='measure' type='quantitative' />
+            <column caption='Room Type' datatype='string' name='[room_type]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.1lhyqlj0ylshwg1exkb5y1ypdjyc].[avg:number_of_reviews:qk]</rows>
+        <cols>[federated.1lhyqlj0ylshwg1exkb5y1ypdjyc].[none:room_type:nk]</cols>
+      </table>
+      <simple-id uuid='{0B40C04F-0B0A-4562-891E-B42DA1744C0D}' />
+    </worksheet>
+    <worksheet name='2.room3'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Airbnb Listings Bangkok' name='federated.1lhyqlj0ylshwg1exkb5y1ypdjyc' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1lhyqlj0ylshwg1exkb5y1ypdjyc'>
+            <column-instance column='[price]' derivation='Avg' name='[avg:price:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[room_type]' derivation='None' name='[none:room_type:nk]' pivot='key' type='nominal' />
+            <column caption='Price' datatype='integer' name='[price]' role='measure' type='quantitative' />
+            <column caption='Room Type' datatype='string' name='[room_type]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.1lhyqlj0ylshwg1exkb5y1ypdjyc].[avg:price:qk]</rows>
+        <cols>[federated.1lhyqlj0ylshwg1exkb5y1ypdjyc].[none:room_type:nk]</cols>
+      </table>
+      <simple-id uuid='{3286389D-9ED6-468C-8B1C-0CC4DF55527D}' />
+    </worksheet>
+    <worksheet name='Most Fav Room'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Jenis Penginapan yang paling diminati
+</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Airbnb Listings Bangkok' name='federated.1lhyqlj0ylshwg1exkb5y1ypdjyc' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1lhyqlj0ylshwg1exkb5y1ypdjyc'>
+            <column-instance column='[number_of_reviews]' derivation='Count' name='[cnt:number_of_reviews:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[room_type]' derivation='None' name='[none:room_type:nk]' pivot='key' type='nominal' />
+            <column caption='Number Of Reviews' datatype='integer' name='[number_of_reviews]' role='measure' type='quantitative' />
+            <column caption='Room Type' datatype='string' name='[room_type]' role='dimension' type='nominal' />
+            <column-instance column='[number_of_reviews]' derivation='Sum' name='[sum:number_of_reviews:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.1lhyqlj0ylshwg1exkb5y1ypdjyc].[none:room_type:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.1lhyqlj0ylshwg1exkb5y1ypdjyc].[cnt:number_of_reviews:qk]' shelf='rows' />
+          </shelf-sorts>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.1lhyqlj0ylshwg1exkb5y1ypdjyc].[none:room_type:nk]</rows>
+        <cols>[federated.1lhyqlj0ylshwg1exkb5y1ypdjyc].[sum:number_of_reviews:qk]</cols>
+      </table>
+      <simple-id uuid='{159ACCF8-3A90-40D7-BB2C-4EC34FAACBE6}' />
+    </worksheet>
+    <worksheet name='Most Fav Room (2)'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Jenis Penginapan yang paling diminati
+</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Airbnb Listings Bangkok' name='federated.1lhyqlj0ylshwg1exkb5y1ypdjyc' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1lhyqlj0ylshwg1exkb5y1ypdjyc'>
+            <column-instance column='[number_of_reviews]' derivation='Count' name='[cnt:number_of_reviews:qk]' pivot='key' type='quantitative' />
+            <column caption='Neighbourhood' datatype='string' name='[neighbourhood]' role='dimension' type='nominal' />
+            <column-instance column='[neighbourhood]' derivation='None' name='[none:neighbourhood:nk]' pivot='key' type='nominal' />
+            <column-instance column='[room_type]' derivation='None' name='[none:room_type:nk]' pivot='key' type='nominal' />
+            <column caption='Number Of Reviews' datatype='integer' name='[number_of_reviews]' role='measure' type='quantitative' />
+            <column caption='Room Type' datatype='string' name='[room_type]' role='dimension' type='nominal' />
+            <column-instance column='[number_of_reviews]' derivation='Sum' name='[sum:number_of_reviews:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1lhyqlj0ylshwg1exkb5y1ypdjyc].[none:neighbourhood:nk]'>
+            <groupfilter function='union' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:neighbourhood:nk]' member='&quot;Huai Khwang&quot;' />
+              <groupfilter function='member' level='[none:neighbourhood:nk]' member='&quot;Khlong Toei&quot;' />
+              <groupfilter function='member' level='[none:neighbourhood:nk]' member='&quot;Ratchathewi&quot;' />
+              <groupfilter function='member' level='[none:neighbourhood:nk]' member='&quot;Sathon&quot;' />
+              <groupfilter function='member' level='[none:neighbourhood:nk]' member='&quot;Vadhana&quot;' />
+            </groupfilter>
+          </filter>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.1lhyqlj0ylshwg1exkb5y1ypdjyc].[none:room_type:nk]' direction='DESC' measure-to-sort-by='[federated.1lhyqlj0ylshwg1exkb5y1ypdjyc].[cnt:number_of_reviews:qk]' shelf='rows' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.1lhyqlj0ylshwg1exkb5y1ypdjyc].[none:neighbourhood:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>([federated.1lhyqlj0ylshwg1exkb5y1ypdjyc].[none:room_type:nk] / [federated.1lhyqlj0ylshwg1exkb5y1ypdjyc].[none:neighbourhood:nk])</rows>
+        <cols>[federated.1lhyqlj0ylshwg1exkb5y1ypdjyc].[sum:number_of_reviews:qk]</cols>
+      </table>
+      <simple-id uuid='{61942214-A02C-40FB-94E7-EDA01B145B05}' />
+    </worksheet>
+    <worksheet name='Most Host/neigh'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Daerah dengan Penginapan terbanyak
+</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Airbnb Listings Bangkok' name='federated.1lhyqlj0ylshwg1exkb5y1ypdjyc' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1lhyqlj0ylshwg1exkb5y1ypdjyc'>
+            <column-instance column='[host_name]' derivation='Count' name='[cnt:host_name:qk]' pivot='key' type='quantitative' />
+            <column caption='Host Name' datatype='string' name='[host_name]' role='dimension' type='nominal' />
+            <column caption='Neighbourhood' datatype='string' name='[neighbourhood]' role='dimension' type='nominal' />
+            <column-instance column='[neighbourhood]' derivation='None' name='[none:neighbourhood:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.1lhyqlj0ylshwg1exkb5y1ypdjyc].[none:neighbourhood:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.1lhyqlj0ylshwg1exkb5y1ypdjyc].[cnt:host_name:qk]' shelf='rows' />
+          </shelf-sorts>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane id='3' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.1lhyqlj0ylshwg1exkb5y1ypdjyc].[none:neighbourhood:nk]</rows>
+        <cols>[federated.1lhyqlj0ylshwg1exkb5y1ypdjyc].[cnt:host_name:qk]</cols>
+      </table>
+      <simple-id uuid='{F0832F6D-60A9-49B8-BA3C-7C5E3D41509D}' />
+    </worksheet>
+    <worksheet name='Mst visite/ Neigh'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Daerah dengan pengunjung terbanyak (metric : number_of_reviews)
+</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Airbnb Listings Bangkok' name='federated.1lhyqlj0ylshwg1exkb5y1ypdjyc' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1lhyqlj0ylshwg1exkb5y1ypdjyc'>
+            <column caption='Neighbourhood' datatype='string' name='[neighbourhood]' role='dimension' type='nominal' />
+            <column-instance column='[neighbourhood]' derivation='None' name='[none:neighbourhood:nk]' pivot='key' type='nominal' />
+            <column caption='Number Of Reviews' datatype='integer' name='[number_of_reviews]' role='measure' type='quantitative' />
+            <column-instance column='[number_of_reviews]' derivation='Sum' name='[sum:number_of_reviews:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.1lhyqlj0ylshwg1exkb5y1ypdjyc].[none:neighbourhood:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.1lhyqlj0ylshwg1exkb5y1ypdjyc].[sum:number_of_reviews:qk]' shelf='rows' />
+          </shelf-sorts>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.1lhyqlj0ylshwg1exkb5y1ypdjyc].[none:neighbourhood:nk]</rows>
+        <cols>[federated.1lhyqlj0ylshwg1exkb5y1ypdjyc].[sum:number_of_reviews:qk]</cols>
+      </table>
+      <simple-id uuid='{3BC40F79-54BB-4F01-BB04-C27ADA7C5611}' />
+    </worksheet>
+    <worksheet name='Sheet 1'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Most visited Neighboorhood</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Airbnb Listings Bangkok' name='federated.1lhyqlj0ylshwg1exkb5y1ypdjyc' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1lhyqlj0ylshwg1exkb5y1ypdjyc'>
+            <column caption='Calculated Host Listings Count' datatype='integer' name='[calculated_host_listings_count]' role='measure' type='quantitative' />
+            <column caption='Neighbourhood' datatype='string' name='[neighbourhood]' role='dimension' type='nominal' />
+            <column-instance column='[neighbourhood]' derivation='None' name='[none:neighbourhood:nk]' pivot='key' type='nominal' />
+            <column-instance column='[calculated_host_listings_count]' derivation='Sum' name='[sum:calculated_host_listings_count:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.1lhyqlj0ylshwg1exkb5y1ypdjyc].[none:neighbourhood:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.1lhyqlj0ylshwg1exkb5y1ypdjyc].[sum:calculated_host_listings_count:qk]' shelf='rows' />
+          </shelf-sorts>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.1lhyqlj0ylshwg1exkb5y1ypdjyc].[none:neighbourhood:nk]</rows>
+        <cols>[federated.1lhyqlj0ylshwg1exkb5y1ypdjyc].[sum:calculated_host_listings_count:qk]</cols>
+      </table>
+      <simple-id uuid='{C895943E-078D-43CB-B06B-487CBFB800EC}' />
+    </worksheet>
+    <worksheet name='Sheet 12'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Airbnb Listings Bangkok' name='federated.1lhyqlj0ylshwg1exkb5y1ypdjyc' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1lhyqlj0ylshwg1exkb5y1ypdjyc'>
+            <column-instance column='[price]' derivation='Avg' name='[avg:price:qk]' pivot='key' type='quantitative' />
+            <column caption='Neighbourhood' datatype='string' name='[neighbourhood]' role='dimension' type='nominal' />
+            <column-instance column='[neighbourhood]' derivation='None' name='[none:neighbourhood:nk]' pivot='key' type='nominal' />
+            <column-instance column='[room_type]' derivation='None' name='[none:room_type:nk]' pivot='key' type='nominal' />
+            <column caption='Number Of Reviews' datatype='integer' name='[number_of_reviews]' role='measure' type='quantitative' />
+            <column caption='Price' datatype='integer' name='[price]' role='measure' type='quantitative' />
+            <column caption='Room Type' datatype='string' name='[room_type]' role='dimension' type='nominal' />
+            <column-instance column='[number_of_reviews]' derivation='Sum' name='[sum:number_of_reviews:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1lhyqlj0ylshwg1exkb5y1ypdjyc].[none:room_type:nk]'>
+            <groupfilter function='member' level='[none:room_type:nk]' member='&quot;Entire home/apt&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.1lhyqlj0ylshwg1exkb5y1ypdjyc].[none:neighbourhood:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.1lhyqlj0ylshwg1exkb5y1ypdjyc].[avg:price:qk]' shelf='columns' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.1lhyqlj0ylshwg1exkb5y1ypdjyc].[none:room_type:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.1lhyqlj0ylshwg1exkb5y1ypdjyc].[sum:number_of_reviews:qk]' field-type='quantitative' fold='true' scope='rows' type='space' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Area' />
+          </pane>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.1lhyqlj0ylshwg1exkb5y1ypdjyc].[avg:price:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Area' />
+          </pane>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.1lhyqlj0ylshwg1exkb5y1ypdjyc].[sum:number_of_reviews:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Area' />
+            <encodings>
+              <color column='[federated.1lhyqlj0ylshwg1exkb5y1ypdjyc].[sum:number_of_reviews:qk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>([federated.1lhyqlj0ylshwg1exkb5y1ypdjyc].[avg:price:qk] + [federated.1lhyqlj0ylshwg1exkb5y1ypdjyc].[sum:number_of_reviews:qk])</rows>
+        <cols>[federated.1lhyqlj0ylshwg1exkb5y1ypdjyc].[none:neighbourhood:nk]</cols>
+      </table>
+      <simple-id uuid='{B4ED88FB-E90A-4100-94CC-1ACCE845ECEC}' />
+    </worksheet>
+    <worksheet name='Sheet 14'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Airbnb Listings Bangkok' name='federated.1lhyqlj0ylshwg1exkb5y1ypdjyc' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.1lhyqlj0ylshwg1exkb5y1ypdjyc'>
+            <column-instance column='[latitude]' derivation='Avg' name='[avg:latitude:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[longitude]' derivation='Avg' name='[avg:longitude:qk]' pivot='key' type='quantitative' />
+            <column aggregation='Avg' caption='Latitude' datatype='real' name='[latitude]' role='measure' semantic-role='[Geographical].[Latitude]' type='quantitative' />
+            <column aggregation='Avg' caption='Longitude' datatype='real' name='[longitude]' role='measure' semantic-role='[Geographical].[Longitude]' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='map'>
+            <format attr='washout' value='0.0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.1lhyqlj0ylshwg1exkb5y1ypdjyc].[avg:longitude:qk]</rows>
+        <cols>[federated.1lhyqlj0ylshwg1exkb5y1ypdjyc].[avg:latitude:qk]</cols>
+      </table>
+      <simple-id uuid='{83E28667-D06D-4FB5-ABD1-E3DBFEB16603}' />
+    </worksheet>
+    <worksheet name='Sheet 2'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Highest Review Neighboorhood </run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Airbnb Listings Bangkok' name='federated.1lhyqlj0ylshwg1exkb5y1ypdjyc' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1lhyqlj0ylshwg1exkb5y1ypdjyc'>
+            <column caption='Neighbourhood' datatype='string' name='[neighbourhood]' role='dimension' type='nominal' />
+            <column-instance column='[neighbourhood]' derivation='None' name='[none:neighbourhood:nk]' pivot='key' type='nominal' />
+            <column caption='Number Of Reviews' datatype='integer' name='[number_of_reviews]' role='measure' type='quantitative' />
+            <column-instance column='[number_of_reviews]' derivation='Sum' name='[sum:number_of_reviews:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.1lhyqlj0ylshwg1exkb5y1ypdjyc].[none:neighbourhood:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.1lhyqlj0ylshwg1exkb5y1ypdjyc].[sum:number_of_reviews:qk]' shelf='rows' />
+          </shelf-sorts>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.1lhyqlj0ylshwg1exkb5y1ypdjyc].[none:neighbourhood:nk]</rows>
+        <cols>[federated.1lhyqlj0ylshwg1exkb5y1ypdjyc].[sum:number_of_reviews:qk]</cols>
+      </table>
+      <simple-id uuid='{7382880B-9A99-4D99-B713-162B5F05CE93}' />
+    </worksheet>
+    <worksheet name='Sheet 22'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Airbnb Listings Bangkok' name='federated.1lhyqlj0ylshwg1exkb5y1ypdjyc' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.1lhyqlj0ylshwg1exkb5y1ypdjyc'>
+            <column-instance column='[latitude]' derivation='Avg' name='[avg:latitude:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[longitude]' derivation='Avg' name='[avg:longitude:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[host_id]' derivation='Count' name='[cnt:host_id:qk]' pivot='key' type='quantitative' />
+            <column caption='Host Id' datatype='integer' name='[host_id]' role='dimension' type='ordinal' />
+            <column aggregation='Avg' caption='Latitude' datatype='real' name='[latitude]' role='measure' semantic-role='[Geographical].[Latitude]' type='quantitative' />
+            <column aggregation='Avg' caption='Longitude' datatype='real' name='[longitude]' role='measure' semantic-role='[Geographical].[Longitude]' type='quantitative' />
+            <column caption='Neighbourhood' datatype='string' name='[neighbourhood]' role='dimension' type='nominal' />
+            <column-instance column='[neighbourhood]' derivation='None' name='[none:neighbourhood:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1lhyqlj0ylshwg1exkb5y1ypdjyc].[none:neighbourhood:nk]'>
+            <groupfilter function='level-members' level='[none:neighbourhood:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.1lhyqlj0ylshwg1exkb5y1ypdjyc].[none:neighbourhood:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.1lhyqlj0ylshwg1exkb5y1ypdjyc].[avg:longitude:qk]' field-type='quantitative' max='11203051.615218375' min='11190754.498381164' projection='EPSG:3857' range-type='fixed' scope='cols' type='space' />
+            <encoding attr='space' class='0' field='[federated.1lhyqlj0ylshwg1exkb5y1ypdjyc].[avg:latitude:qk]' field-type='quantitative' max='1546226.7142532209' min='1539858.2933700781' projection='EPSG:3857' range-type='fixed' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0.0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='4' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.1lhyqlj0ylshwg1exkb5y1ypdjyc].[none:neighbourhood:nk]' />
+              <size column='[federated.1lhyqlj0ylshwg1exkb5y1ypdjyc].[cnt:host_id:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='2.1988949775695801' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1lhyqlj0ylshwg1exkb5y1ypdjyc].[avg:latitude:qk]</rows>
+        <cols>[federated.1lhyqlj0ylshwg1exkb5y1ypdjyc].[avg:longitude:qk]</cols>
+      </table>
+      <simple-id uuid='{3F856582-7A36-47FB-BD99-353D506B27EB}' />
+    </worksheet>
+    <worksheet name='Sheet 24'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Airbnb Listings Bangkok' name='federated.1lhyqlj0ylshwg1exkb5y1ypdjyc' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1lhyqlj0ylshwg1exkb5y1ypdjyc'>
+            <column caption='Minimum Nights' datatype='integer' name='[minimum_nights]' role='measure' type='quantitative' />
+            <column-instance column='[minimum_nights]' derivation='None' name='[none:minimum_nights:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[number_of_reviews]' derivation='None' name='[none:number_of_reviews:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[room_type]' derivation='None' name='[none:room_type:nk]' pivot='key' type='nominal' />
+            <column caption='Number Of Reviews' datatype='integer' name='[number_of_reviews]' role='measure' type='quantitative' />
+            <column caption='Room Type' datatype='string' name='[room_type]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1lhyqlj0ylshwg1exkb5y1ypdjyc].[none:room_type:nk]'>
+            <groupfilter function='member' level='[none:room_type:nk]' member='&quot;Shared room&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.1lhyqlj0ylshwg1exkb5y1ypdjyc].[none:room_type:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.1lhyqlj0ylshwg1exkb5y1ypdjyc].[none:minimum_nights:qk]</rows>
+        <cols>[federated.1lhyqlj0ylshwg1exkb5y1ypdjyc].[none:number_of_reviews:qk]</cols>
+      </table>
+      <simple-id uuid='{443BFB7A-E6AD-436E-832D-75FB6398846E}' />
+    </worksheet>
+    <worksheet name='Sheet 25'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Airbnb Listings Bangkok' name='federated.1lhyqlj0ylshwg1exkb5y1ypdjyc' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1lhyqlj0ylshwg1exkb5y1ypdjyc'>
+            <column-instance column='[price]' derivation='Avg' name='[avg:price:qk]' pivot='key' type='quantitative' />
+            <column caption='Neighbourhood' datatype='string' name='[neighbourhood]' role='dimension' type='nominal' />
+            <column-instance column='[neighbourhood]' derivation='None' name='[none:neighbourhood:nk]' pivot='key' type='nominal' />
+            <column-instance column='[room_type]' derivation='None' name='[none:room_type:nk]' pivot='key' type='nominal' />
+            <column caption='Number Of Reviews' datatype='integer' name='[number_of_reviews]' role='measure' type='quantitative' />
+            <column caption='Price' datatype='integer' name='[price]' role='measure' type='quantitative' />
+            <column caption='Room Type' datatype='string' name='[room_type]' role='dimension' type='nominal' />
+            <column-instance column='[number_of_reviews]' derivation='Sum' name='[sum:number_of_reviews:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <manual-sort column='[federated.1lhyqlj0ylshwg1exkb5y1ypdjyc].[none:neighbourhood:nk]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;Ratchathewi&quot;</bucket>
+              <bucket>&quot;Phra Nakhon&quot;</bucket>
+              <bucket>&quot;Vadhana&quot;</bucket>
+              <bucket>&quot;Bang Rak&quot;</bucket>
+              <bucket>&quot;Phaya Thai&quot;</bucket>
+              <bucket>&quot;Sathon&quot;</bucket>
+              <bucket>&quot;Bang Phlat&quot;</bucket>
+              <bucket>&quot;Suanluang&quot;</bucket>
+              <bucket>&quot;Pom Prap Sattru Phai&quot;</bucket>
+              <bucket>&quot;Din Daeng&quot;</bucket>
+              <bucket>&quot;Lat Krabang&quot;</bucket>
+              <bucket>&quot;Khlong San&quot;</bucket>
+              <bucket>&quot;Don Mueang&quot;</bucket>
+              <bucket>&quot;Samphanthawong&quot;</bucket>
+              <bucket>&quot;Pra Wet&quot;</bucket>
+              <bucket>&quot;Khlong Toei&quot;</bucket>
+              <bucket>&quot;Parthum Wan&quot;</bucket>
+              <bucket>&quot;Dusit&quot;</bucket>
+              <bucket>&quot;Huai Khwang&quot;</bucket>
+              <bucket>&quot;Thon buri&quot;</bucket>
+              <bucket>&quot;Bangkok Noi&quot;</bucket>
+              <bucket>&quot;Taling Chan&quot;</bucket>
+              <bucket>&quot;Phra Khanong&quot;</bucket>
+              <bucket>&quot;Chatu Chak&quot;</bucket>
+              <bucket>&quot;Bang Kapi&quot;</bucket>
+              <bucket>&quot;Bangkok Yai&quot;</bucket>
+              <bucket>&quot;Bang Na&quot;</bucket>
+              <bucket>&quot;Yan na wa&quot;</bucket>
+              <bucket>&quot;Wang Thong Lang&quot;</bucket>
+              <bucket>&quot;Saphan Sung&quot;</bucket>
+              <bucket>&quot;Phasi Charoen&quot;</bucket>
+              <bucket>&quot;Min Buri&quot;</bucket>
+              <bucket>&quot;Lat Phrao&quot;</bucket>
+              <bucket>&quot;Chom Thong&quot;</bucket>
+              <bucket>&quot;Bang Sue&quot;</bucket>
+              <bucket>&quot;Bang Khun thain&quot;</bucket>
+              <bucket>&quot;Bang Khen&quot;</bucket>
+              <bucket>%all%</bucket>
+            </dictionary>
+          </manual-sort>
+          <filter class='categorical' column='[federated.1lhyqlj0ylshwg1exkb5y1ypdjyc].[none:room_type:nk]'>
+            <groupfilter function='member' level='[none:room_type:nk]' member='&quot;Shared room&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.1lhyqlj0ylshwg1exkb5y1ypdjyc].[none:room_type:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.1lhyqlj0ylshwg1exkb5y1ypdjyc].[avg:price:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+          <pane id='3' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.1lhyqlj0ylshwg1exkb5y1ypdjyc].[sum:number_of_reviews:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>([federated.1lhyqlj0ylshwg1exkb5y1ypdjyc].[avg:price:qk] + [federated.1lhyqlj0ylshwg1exkb5y1ypdjyc].[sum:number_of_reviews:qk])</rows>
+        <cols>([federated.1lhyqlj0ylshwg1exkb5y1ypdjyc].[none:room_type:nk] / [federated.1lhyqlj0ylshwg1exkb5y1ypdjyc].[none:neighbourhood:nk])</cols>
+      </table>
+      <simple-id uuid='{CE13D17E-045B-4A60-AC9B-A16118E06D8C}' />
+    </worksheet>
+    <worksheet name='Sheet 26'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Airbnb Listings Bangkok' name='federated.1lhyqlj0ylshwg1exkb5y1ypdjyc' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1lhyqlj0ylshwg1exkb5y1ypdjyc'>
+            <column-instance column='[minimum_nights]' derivation='Avg' name='[avg:minimum_nights:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[price]' derivation='Avg' name='[avg:price:qk]' pivot='key' type='quantitative' />
+            <column caption='Minimum Nights' datatype='integer' name='[minimum_nights]' role='measure' type='quantitative' />
+            <column caption='Neighbourhood' datatype='string' name='[neighbourhood]' role='dimension' type='nominal' />
+            <column-instance column='[neighbourhood]' derivation='None' name='[none:neighbourhood:nk]' pivot='key' type='nominal' />
+            <column-instance column='[room_type]' derivation='None' name='[none:room_type:nk]' pivot='key' type='nominal' />
+            <column caption='Number Of Reviews' datatype='integer' name='[number_of_reviews]' role='measure' type='quantitative' />
+            <column caption='Price' datatype='integer' name='[price]' role='measure' type='quantitative' />
+            <column caption='Room Type' datatype='string' name='[room_type]' role='dimension' type='nominal' />
+            <column-instance column='[number_of_reviews]' derivation='Sum' name='[sum:number_of_reviews:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1lhyqlj0ylshwg1exkb5y1ypdjyc].[none:neighbourhood:nk]'>
+            <groupfilter function='member' level='[none:neighbourhood:nk]' member='&quot;Ratchathewi&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.1lhyqlj0ylshwg1exkb5y1ypdjyc].[none:neighbourhood:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.1lhyqlj0ylshwg1exkb5y1ypdjyc].[sum:number_of_reviews:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.1lhyqlj0ylshwg1exkb5y1ypdjyc].[avg:price:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+          <pane id='3' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.1lhyqlj0ylshwg1exkb5y1ypdjyc].[avg:minimum_nights:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>([federated.1lhyqlj0ylshwg1exkb5y1ypdjyc].[sum:number_of_reviews:qk] + ([federated.1lhyqlj0ylshwg1exkb5y1ypdjyc].[avg:price:qk] + [federated.1lhyqlj0ylshwg1exkb5y1ypdjyc].[avg:minimum_nights:qk]))</rows>
+        <cols>[federated.1lhyqlj0ylshwg1exkb5y1ypdjyc].[none:room_type:nk]</cols>
+      </table>
+      <simple-id uuid='{0C932EA6-F679-44FA-896F-D956BC43ADF7}' />
+    </worksheet>
+    <worksheet name='Sheet 27'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Airbnb Listings Bangkok' name='federated.1lhyqlj0ylshwg1exkb5y1ypdjyc' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1lhyqlj0ylshwg1exkb5y1ypdjyc'>
+            <column-instance column='[number_of_reviews]' derivation='Avg' name='[avg:number_of_reviews:qk]' pivot='key' type='quantitative' />
+            <column caption='Minimum Nights' datatype='integer' name='[minimum_nights]' role='measure' type='quantitative' />
+            <column-instance column='[minimum_nights]' derivation='None' name='[none:minimum_nights:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[room_type]' derivation='None' name='[none:room_type:nk]' pivot='key' type='nominal' />
+            <column caption='Number Of Reviews' datatype='integer' name='[number_of_reviews]' role='measure' type='quantitative' />
+            <column caption='Room Type' datatype='string' name='[room_type]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane id='4' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1lhyqlj0ylshwg1exkb5y1ypdjyc].[none:room_type:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.1lhyqlj0ylshwg1exkb5y1ypdjyc].[avg:number_of_reviews:qk]</rows>
+        <cols>([federated.1lhyqlj0ylshwg1exkb5y1ypdjyc].[none:room_type:nk] * [federated.1lhyqlj0ylshwg1exkb5y1ypdjyc].[none:minimum_nights:qk])</cols>
+      </table>
+      <simple-id uuid='{28477905-D142-4914-80C7-BC0FDBEA7D3E}' />
+    </worksheet>
+    <worksheet name='Sheet 3'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Average Price for Room Type&#10;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Airbnb Listings Bangkok' name='federated.1lhyqlj0ylshwg1exkb5y1ypdjyc' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1lhyqlj0ylshwg1exkb5y1ypdjyc'>
+            <column-instance column='[price]' derivation='Avg' name='[avg:price:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[room_type]' derivation='None' name='[none:room_type:nk]' pivot='key' type='nominal' />
+            <column caption='Price' datatype='integer' name='[price]' role='measure' type='quantitative' />
+            <column caption='Room Type' datatype='string' name='[room_type]' role='dimension' type='nominal' />
+            <column-instance column='[price]' derivation='Sum' name='[sum:price:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1lhyqlj0ylshwg1exkb5y1ypdjyc].[sum:price:ok]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.1lhyqlj0ylshwg1exkb5y1ypdjyc].[none:room_type:nk]</rows>
+        <cols>[federated.1lhyqlj0ylshwg1exkb5y1ypdjyc].[avg:price:qk]</cols>
+      </table>
+      <simple-id uuid='{D8517DE7-6003-4953-8ACC-F084A16A6BF2}' />
+    </worksheet>
+    <worksheet name='Sheet 30'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Airbnb Listings Bangkok' name='federated.1lhyqlj0ylshwg1exkb5y1ypdjyc' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1lhyqlj0ylshwg1exkb5y1ypdjyc'>
+            <column caption='Neighbourhood' datatype='string' name='[neighbourhood]' role='dimension' type='nominal' />
+            <column-instance column='[neighbourhood]' derivation='None' name='[none:neighbourhood:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1lhyqlj0ylshwg1exkb5y1ypdjyc].[none:neighbourhood:nk]'>
+            <groupfilter function='member' level='[none:neighbourhood:nk]' member='&quot;Khlong Toei&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.1lhyqlj0ylshwg1exkb5y1ypdjyc].[none:neighbourhood:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{34DEE4F0-1EEA-49D8-97FC-E6DE54C6CA98}' />
+    </worksheet>
+    <worksheet name='Sheet 4'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Average Neighboorhood Room Price
+</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Airbnb Listings Bangkok' name='federated.1lhyqlj0ylshwg1exkb5y1ypdjyc' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1lhyqlj0ylshwg1exkb5y1ypdjyc'>
+            <column-instance column='[price]' derivation='Avg' name='[avg:price:qk]' pivot='key' type='quantitative' />
+            <column caption='Neighbourhood' datatype='string' name='[neighbourhood]' role='dimension' type='nominal' />
+            <column-instance column='[neighbourhood]' derivation='None' name='[none:neighbourhood:nk]' pivot='key' type='nominal' />
+            <column caption='Price' datatype='integer' name='[price]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <manual-sort column='[federated.1lhyqlj0ylshwg1exkb5y1ypdjyc].[none:neighbourhood:nk]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;Bang Phlat&quot;</bucket>
+              <bucket>&quot;Huai Khwang&quot;</bucket>
+              <bucket>&quot;Khlong San&quot;</bucket>
+              <bucket>&quot;Vadhana&quot;</bucket>
+              <bucket>&quot;Parthum Wan&quot;</bucket>
+              <bucket>&quot;Khlong Toei&quot;</bucket>
+              <bucket>&quot;Lat Phrao&quot;</bucket>
+              <bucket>&quot;Bang Khun thain&quot;</bucket>
+              <bucket>&quot;Nong Chok&quot;</bucket>
+              <bucket>&quot;Ratchathewi&quot;</bucket>
+              <bucket>&quot;Yan na wa&quot;</bucket>
+              <bucket>&quot;Bang Kapi&quot;</bucket>
+              <bucket>&quot;Bang Rak&quot;</bucket>
+              <bucket>&quot;Thon buri&quot;</bucket>
+              <bucket>&quot;Din Daeng&quot;</bucket>
+              <bucket>&quot;Samphanthawong&quot;</bucket>
+              <bucket>&quot;Pom Prap Sattru Phai&quot;</bucket>
+              <bucket>&quot;Taling Chan&quot;</bucket>
+              <bucket>&quot;Khlong Sam Wa&quot;</bucket>
+              <bucket>&quot;Bang Kho laen&quot;</bucket>
+              <bucket>&quot;Sathon&quot;</bucket>
+              <bucket>&quot;Bueng Kum&quot;</bucket>
+              <bucket>&quot;Chatu Chak&quot;</bucket>
+              <bucket>&quot;Saphan Sung&quot;</bucket>
+              <bucket>&quot;Bang Khen&quot;</bucket>
+              <bucket>&quot;Bangkok Noi&quot;</bucket>
+              <bucket>&quot;Khan Na Yao&quot;</bucket>
+              <bucket>&quot;Bangkok Yai&quot;</bucket>
+              <bucket>&quot;Bang Na&quot;</bucket>
+              <bucket>&quot;Chom Thong&quot;</bucket>
+              <bucket>&quot;Suanluang&quot;</bucket>
+              <bucket>&quot;Dusit&quot;</bucket>
+              <bucket>&quot;Thung khru&quot;</bucket>
+              <bucket>&quot;Bang Khae&quot;</bucket>
+              <bucket>&quot;Pra Wet&quot;</bucket>
+              <bucket>&quot;Phaya Thai&quot;</bucket>
+              <bucket>&quot;Bang Sue&quot;</bucket>
+              <bucket>&quot;Sai Mai&quot;</bucket>
+              <bucket>&quot;Phra Nakhon&quot;</bucket>
+              <bucket>&quot;Thawi Watthana&quot;</bucket>
+              <bucket>&quot;Wang Thong Lang&quot;</bucket>
+              <bucket>&quot;Rat Burana&quot;</bucket>
+              <bucket>&quot;Bang Bon&quot;</bucket>
+              <bucket>&quot;Phra Khanong&quot;</bucket>
+              <bucket>&quot;Min Buri&quot;</bucket>
+              <bucket>&quot;Phasi Charoen&quot;</bucket>
+              <bucket>&quot;Lat Krabang&quot;</bucket>
+              <bucket>&quot;Don Mueang&quot;</bucket>
+              <bucket>&quot;Nong Khaem&quot;</bucket>
+              <bucket>&quot;Lak Si&quot;</bucket>
+              <bucket>%all%</bucket>
+            </dictionary>
+          </manual-sort>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.1lhyqlj0ylshwg1exkb5y1ypdjyc].[none:neighbourhood:nk]</rows>
+        <cols>[federated.1lhyqlj0ylshwg1exkb5y1ypdjyc].[avg:price:qk]</cols>
+      </table>
+      <simple-id uuid='{5CC9963F-EED1-4892-95C7-9A18B3A6DF7F}' />
+    </worksheet>
+    <worksheet name='Sheet 5'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Airbnb Listings Bangkok' name='federated.1lhyqlj0ylshwg1exkb5y1ypdjyc' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1lhyqlj0ylshwg1exkb5y1ypdjyc'>
+            <column-instance column='[reviews_per_month]' derivation='Count' name='[cnt:reviews_per_month:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[reviews_per_month]' derivation='None' name='[none:reviews_per_month:ok]' pivot='key' type='ordinal' />
+            <column caption='Number Of Reviews' datatype='integer' name='[number_of_reviews]' role='measure' type='quantitative' />
+            <column caption='Reviews Per Month' datatype='real' name='[reviews_per_month]' role='dimension' type='quantitative' />
+            <column-instance column='[number_of_reviews]' derivation='Sum' name='[sum:number_of_reviews:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1lhyqlj0ylshwg1exkb5y1ypdjyc].[cnt:reviews_per_month:ok]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.1lhyqlj0ylshwg1exkb5y1ypdjyc].[sum:number_of_reviews:qk]</rows>
+        <cols>[federated.1lhyqlj0ylshwg1exkb5y1ypdjyc].[none:reviews_per_month:ok]</cols>
+      </table>
+      <simple-id uuid='{17498EF8-505D-4713-A96A-2BCEA6742236}' />
+    </worksheet>
+    <worksheet name='Sheet 6'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Airbnb Listings Bangkok' name='federated.1lhyqlj0ylshwg1exkb5y1ypdjyc' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1lhyqlj0ylshwg1exkb5y1ypdjyc'>
+            <column-instance column='[room_type]' derivation='None' name='[none:room_type:nk]' pivot='key' type='nominal' />
+            <column caption='Number Of Reviews' datatype='integer' name='[number_of_reviews]' role='measure' type='quantitative' />
+            <column caption='Room Type' datatype='string' name='[room_type]' role='dimension' type='nominal' />
+            <column-instance column='[number_of_reviews]' derivation='Sum' name='[sum:number_of_reviews:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.1lhyqlj0ylshwg1exkb5y1ypdjyc].[none:room_type:nk]</rows>
+        <cols>[federated.1lhyqlj0ylshwg1exkb5y1ypdjyc].[sum:number_of_reviews:qk]</cols>
+      </table>
+      <simple-id uuid='{3537CAEF-FFBA-4EDC-A90D-5BA4E35BFAFD}' />
+    </worksheet>
+    <worksheet name='Sheet 7'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Airbnb Listings Bangkok' name='federated.1lhyqlj0ylshwg1exkb5y1ypdjyc' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1lhyqlj0ylshwg1exkb5y1ypdjyc'>
+            <column caption='Host Name' datatype='string' name='[host_name]' role='dimension' type='nominal' />
+            <column-instance column='[host_name]' derivation='None' name='[none:host_name:nk]' pivot='key' type='nominal' />
+            <column-instance column='[room_type]' derivation='None' name='[none:room_type:nk]' pivot='key' type='nominal' />
+            <column caption='Number Of Reviews' datatype='integer' name='[number_of_reviews]' role='measure' type='quantitative' />
+            <column caption='Room Type' datatype='string' name='[room_type]' role='dimension' type='nominal' />
+            <column-instance column='[number_of_reviews]' derivation='Sum' name='[sum:number_of_reviews:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1lhyqlj0ylshwg1exkb5y1ypdjyc].[none:room_type:nk]'>
+            <groupfilter function='level-members' level='[none:room_type:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.1lhyqlj0ylshwg1exkb5y1ypdjyc].[none:host_name:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.1lhyqlj0ylshwg1exkb5y1ypdjyc].[sum:number_of_reviews:qk]' shelf='rows' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.1lhyqlj0ylshwg1exkb5y1ypdjyc].[none:room_type:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>([federated.1lhyqlj0ylshwg1exkb5y1ypdjyc].[none:room_type:nk] / [federated.1lhyqlj0ylshwg1exkb5y1ypdjyc].[none:host_name:nk])</rows>
+        <cols>[federated.1lhyqlj0ylshwg1exkb5y1ypdjyc].[sum:number_of_reviews:qk]</cols>
+      </table>
+      <simple-id uuid='{5DD914D4-B28D-4065-81A3-BB891A35A130}' />
+    </worksheet>
+    <worksheet name='Sheet 8'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Airbnb Listings Bangkok' name='federated.1lhyqlj0ylshwg1exkb5y1ypdjyc' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1lhyqlj0ylshwg1exkb5y1ypdjyc'>
+            <column caption='Availability 365' datatype='integer' name='[availability_365]' role='measure' type='quantitative' />
+            <column caption='Host Name' datatype='string' name='[host_name]' role='dimension' type='nominal' />
+            <column-instance column='[host_name]' derivation='None' name='[none:host_name:nk]' pivot='key' type='nominal' />
+            <column-instance column='[availability_365]' derivation='Sum' name='[sum:availability_365:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.1lhyqlj0ylshwg1exkb5y1ypdjyc].[none:host_name:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.1lhyqlj0ylshwg1exkb5y1ypdjyc].[sum:availability_365:qk]' shelf='columns' />
+          </shelf-sorts>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.1lhyqlj0ylshwg1exkb5y1ypdjyc].[sum:availability_365:qk]</rows>
+        <cols>[federated.1lhyqlj0ylshwg1exkb5y1ypdjyc].[none:host_name:nk]</cols>
+      </table>
+      <simple-id uuid='{517C622E-0DFD-4DD1-879B-B004B0D0F4A2}' />
+    </worksheet>
+    <worksheet name='done1'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Peta Sebaran Number_of_reviews Each Neighbourhood</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Airbnb Listings Bangkok' name='federated.1lhyqlj0ylshwg1exkb5y1ypdjyc' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.1lhyqlj0ylshwg1exkb5y1ypdjyc'>
+            <column-instance column='[latitude]' derivation='Avg' name='[avg:latitude:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[longitude]' derivation='Avg' name='[avg:longitude:qk]' pivot='key' type='quantitative' />
+            <column aggregation='Avg' caption='Latitude' datatype='real' name='[latitude]' role='measure' semantic-role='[Geographical].[Latitude]' type='quantitative' />
+            <column aggregation='Avg' caption='Longitude' datatype='real' name='[longitude]' role='measure' semantic-role='[Geographical].[Longitude]' type='quantitative' />
+            <column caption='Neighbourhood' datatype='string' name='[neighbourhood]' role='dimension' type='nominal' />
+            <column-instance column='[neighbourhood]' derivation='None' name='[none:neighbourhood:nk]' pivot='key' type='nominal' />
+            <column caption='Number Of Reviews' datatype='integer' name='[number_of_reviews]' role='measure' type='quantitative' />
+            <column-instance column='[number_of_reviews]' derivation='Sum' name='[sum:number_of_reviews:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.1lhyqlj0ylshwg1exkb5y1ypdjyc].[avg:longitude:qk]' field-type='quantitative' max='11221810.799561312' min='11180294.100485656' projection='EPSG:3857' range-type='fixed' scope='cols' type='space' />
+            <encoding attr='space' class='0' field='[federated.1lhyqlj0ylshwg1exkb5y1ypdjyc].[avg:latitude:qk]' field-type='quantitative' max='1552925.5210935269' min='1531424.8866852662' projection='EPSG:3857' range-type='fixed' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0.0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='6' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.1lhyqlj0ylshwg1exkb5y1ypdjyc].[none:neighbourhood:nk]' />
+              <size column='[federated.1lhyqlj0ylshwg1exkb5y1ypdjyc].[sum:number_of_reviews:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+                <format attr='size' value='2.9502761363983154' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1lhyqlj0ylshwg1exkb5y1ypdjyc].[avg:latitude:qk]</rows>
+        <cols>[federated.1lhyqlj0ylshwg1exkb5y1ypdjyc].[avg:longitude:qk]</cols>
+      </table>
+      <simple-id uuid='{1D9D9D5F-6582-4D77-B1FA-784A75BF8748}' />
+    </worksheet>
+  </worksheets>
+  <windows source-height='30'>
+    <window class='worksheet' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{C4E8E490-FD6F-43FD-934B-8505C31BB8C6}' />
+    </window>
+    <window class='worksheet' name='Sheet 2'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{B521C903-963D-4A1F-8039-22EB8C45C976}' />
+    </window>
+    <window class='worksheet' name='Sheet 3'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='2' param='[federated.1lhyqlj0ylshwg1exkb5y1ypdjyc].[sum:price:ok]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{558BDB08-53AB-450E-AA1F-060F728F8293}' />
+    </window>
+    <window class='worksheet' name='Sheet 4'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{A19F6C98-6873-4236-85F4-B8AB7EB833A1}' />
+    </window>
+    <window class='worksheet' name='Sheet 5'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1lhyqlj0ylshwg1exkb5y1ypdjyc].[cnt:reviews_per_month:ok]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{7BE07FCD-3600-4F93-8EE1-F38094924FFB}' />
+    </window>
+    <window class='worksheet' name='Sheet 6'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{2FEF367C-7AC6-45E3-8344-B43B5494AB64}' />
+    </window>
+    <window class='worksheet' name='Sheet 7'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.1lhyqlj0ylshwg1exkb5y1ypdjyc].[none:room_type:nk]' type='filter' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{A272E864-A8DC-4DF1-BC25-0477F89ECF4B}' />
+    </window>
+    <window class='worksheet' name='Sheet 8'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{AB48EB4B-5196-4F6F-955E-FC134E50037D}' />
+    </window>
+    <window class='worksheet' name='Mst visite/ Neigh'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{3222256B-29C2-4C0F-AA28-8B4B832A6DCD}' />
+    </window>
+    <window class='worksheet' name='Most Host/neigh'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{E1CFABF6-725B-41B7-97FD-0347726F1B8F}' />
+    </window>
+    <window class='worksheet' name='Most Fav Room'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{3774B4B3-5A4B-4453-B9FC-82A299C1FAEA}' />
+    </window>
+    <window class='worksheet' name='Most Fav Room (2)'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{B94B0C20-8CEA-4096-923E-A3C1B96641A0}' />
+    </window>
+    <window class='worksheet' name='Sheet 12'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='2' param='[federated.1lhyqlj0ylshwg1exkb5y1ypdjyc].[sum:number_of_reviews:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{0CA2B50C-D6B1-4C6F-9C19-CC3645FFEEED}' />
+    </window>
+    <window class='worksheet' name='Sheet 14'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{DD25DFE7-9336-4612-8CB5-665A74EA8DF8}' />
+    </window>
+    <window class='worksheet' name='1.neigh1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{8CC1B16D-40ED-415A-B62F-FD06F9C5487D}' />
+    </window>
+    <window class='worksheet' name='1.neigh2'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{AD3EB0AA-0899-49CE-BB83-90EE106667BA}' />
+    </window>
+    <window class='worksheet' name='1.neigh3'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1lhyqlj0ylshwg1exkb5y1ypdjyc].[none:neighbourhood:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{4DDB3ACC-1EF9-4FE0-BF50-B553ECE29C81}' />
+    </window>
+    <window class='worksheet' name='1.neigh4'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1lhyqlj0ylshwg1exkb5y1ypdjyc].[none:neighbourhood:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{CEB73C82-CC4D-46E7-9325-5CA4414B12DA}' />
+    </window>
+    <window class='worksheet' name='2. room1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='1' param='[federated.1lhyqlj0ylshwg1exkb5y1ypdjyc].[none:room_type:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{0A3E0978-B571-4B62-9EB2-888D444A56F8}' />
+    </window>
+    <window class='worksheet' name='2.room2'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{CDAECDD7-8B55-4B86-812E-D3D262D788C6}' />
+    </window>
+    <window class='worksheet' name='2.room3'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{112CFE4D-D820-4DAC-9744-9FFA4CE99CBF}' />
+    </window>
+    <window class='worksheet' name='Sheet 22'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.1lhyqlj0ylshwg1exkb5y1ypdjyc].[none:neighbourhood:nk]' type='filter' />
+            <card pane-specification-id='4' param='[federated.1lhyqlj0ylshwg1exkb5y1ypdjyc].[none:neighbourhood:nk]' type='color' />
+            <card pane-specification-id='4' param='[federated.1lhyqlj0ylshwg1exkb5y1ypdjyc].[cnt:host_id:qk]' type='size' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{B3D94276-38A6-497A-8E00-E7B4EAC3521D}' />
+    </window>
+    <window class='worksheet' name='done1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='6' param='[federated.1lhyqlj0ylshwg1exkb5y1ypdjyc].[none:neighbourhood:nk]' type='color' />
+            <card pane-specification-id='6' param='[federated.1lhyqlj0ylshwg1exkb5y1ypdjyc].[sum:number_of_reviews:qk]' type='size' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{E59F72FC-57C5-4C4A-85EA-90567447361E}' />
+    </window>
+    <window class='worksheet' name='Sheet 24'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{F38EA039-3339-4597-9A54-C80819CF1591}' />
+    </window>
+    <window class='worksheet' name='Sheet 25'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{620937C2-0E02-401B-B02F-172AFFF9E446}' />
+    </window>
+    <window class='worksheet' name='Sheet 26'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.1lhyqlj0ylshwg1exkb5y1ypdjyc].[none:neighbourhood:nk]' type='filter' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{B554781A-AF7F-4C2B-BF5D-5CE289D2AF1D}' />
+    </window>
+    <window class='worksheet' name='Sheet 27'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='4' param='[federated.1lhyqlj0ylshwg1exkb5y1ypdjyc].[none:room_type:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{0E1F99DE-C065-48C3-88EC-D29D9585A057}' />
+    </window>
+    <window class='worksheet' maximized='true' name='0.a.'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{96F12E86-9AB5-46F2-A5B9-0D9A7E06EF54}' />
+    </window>
+    <window class='worksheet' name='1.'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{0E0AED3D-58F1-47A3-BADA-ADA69F33118D}' />
+    </window>
+    <window class='worksheet' name='2.'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{8ED7F8F0-3623-4D74-B728-7FF7FE146318}' />
+    </window>
+    <window class='worksheet' name='Sheet 30'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{9F40CCEC-1090-4CFC-ACBD-9811CE2D3794}' />
+    </window>
+  </windows>
+</workbook>
